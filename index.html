@@ -1,3 +1,6 @@
+<!-- TODO1: Crie um campo endereco de preenchimento obrigatorio no formulario -->
+<!-- TODO2: Mude o estilo da borda do formulario para 'dashed' -->
+<!-- TODO3: Mude o tamanho da borda do formulario para 'inline-size: 50%;'-->
 <!DOCTYPE html>
 <html lang="bzs">
 <head>
@@ -13,7 +16,7 @@
 			font-size: 5.5em;
 		}
 		#tabela {
-			border: 1px solid black;
+			border: 5px solid black;
 		}
 	</style>
 </head>
@@ -22,8 +25,14 @@
 	<h1>webaula1ex5</h1>
 	
 	<!-- Formulario -->
+	<!-- action: destino de redirecionamento -->
+	<!-- type: tipo de entrada de dados -->
+	<!-- name: nome do campo. Ao clicar em 'submit' esse valor aparece na URL -->
+	<!-- required: atributo de preenchimento obrigatorio -->
+	<!-- autofocus: ao carregar a pagina, esse campo eh selecionado primeiro -->
+
 	<h3>HTTP GET</h3>
-	<form action="pagina2.html" method="get" style="border: outset">
+	<form action="pagina2.html" method="get" style="border: outset;"> <!-- border: dashed; inline-size: 50%;-->
 		Nome: <input type="text" name="nome" required autofocus />
 		<br>
 		Senha: <input type="password" name="senha" required />
